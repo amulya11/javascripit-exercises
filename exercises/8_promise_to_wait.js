@@ -16,10 +16,14 @@ to the console, waits 3 more seconds and then writes
 console.log('Go!')
 
 // PLACE YOUR CODE BELOW
-setTimeout(function(){ console.log("I waited 1 second"); }, 1000);
-setTimeout(function(){ console.log("I waited 3 more seconds"); }, 3000);
+//setTimeout(function(){ console.log("I waited 1 second"); }, 1000);
+//SetTimeout(function(){ console.log("I waited 3 more seconds"); }, 3000);
 
-
+	function failureCallback(error) {
+		console.log("Error in your function");
+	}
+		wait(1).then(() => console.log("I waited 1 second")).catch(failureCallback)
+		wait(3).then(() => console.log("I waited 3 more seconds")).catch(failureCallback)
 // PLACE YOUR CODE ABOVE
 /*
 You console output should look like the following AND wait the

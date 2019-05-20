@@ -7,11 +7,11 @@ parameter passed to createGetFunction when it was called.
 */
 function createGetFunction(elementToReturn) {
   // PLACE YOUR CODE BELOW
-  //i did not gete the better javascript solution for this.
-return function() {
-	return(arguments[0][1]);
-};
-  // PLACE YOUR CODE ABOVE
+  //i am sry i tried this but couldnt get solved the way it is asked for
+	return function() {
+		return(arguments[0][1]);
+	};
+  // 	PLACE YOUR CODE ABOVE
 }
 
 // this should set getSecondElement to a function that will return the second element
